@@ -1,15 +1,11 @@
-pipeline{
-  agent = any
-  stages{
-    stage{
-      steps("Build job){
-        sh 'python3 python-hello.py'
-      }
-    }
-    stage ("test job"){
-        steps{
-            bat 'python3 --version'
+pipeline {
+    agent any
+
+    stages {
+        stage('Build job') {
+            steps {
+                sh 'python3 python-hello.py'
+            }
         }
     }
-  }
 }
