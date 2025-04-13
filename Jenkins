@@ -7,5 +7,11 @@ pipeline {
                 sh 'python3 python-hello.py'
             }
         }
+
+        stage('test'){
+            steps {
+                bat 'python3 --version'
+            }
+         }
     }
 }
