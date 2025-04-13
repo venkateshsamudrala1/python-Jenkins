@@ -2,7 +2,7 @@ pipeline{
   agent = venkatesh
   stages{
     stage{
-      steps("Build job){
+      steps("Build job"){
         sh 'python3 python-hello.py'
       }
     }
