@@ -6,10 +6,7 @@ pipeline {
             steps {
                 bat 'python3 python-hello.py'
             }
-        stage('test job') {
-            steps {
-                bat 'python3 --version'
-            }
+        
         }
     }
 }
